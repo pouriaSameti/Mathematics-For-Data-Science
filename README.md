@@ -9,9 +9,9 @@ All projects were completed under the supervision of **Dr. Ramin Javadi**, and e
   + Clear connection between mathematical theory and computational practice
 
 ### Table of Contents
-[Exercise 1: Geometric and Probabilistic Behavior in High Dimensions]()<br>
-[Exercise 2: Spectral Methods and Recommendation Systems]()<br>
-[Exercise 3]()<br>
+[Exercise 1: Geometric and Probabilistic Behavior in High Dimensions](https://github.com/pouriaSameti/Mathematics-For-Data-Science?tab=readme-ov-file#exercise-1-geometric-and-probabilistic-behavior-in-high-dimensions)<br>
+[Exercise 2: Spectral Methods and Recommendation Systems](https://github.com/pouriaSameti/Mathematics-For-Data-Science?tab=readme-ov-file#exercise2-spectral-methods-and-recommendation-systems)<br>
+[Exercise 3: Exercise 3: PageRank on WikiVote Network]()<br>
 <br>
 
 ### Installation
@@ -70,7 +70,7 @@ This exercise provides both theoretical insight and empirical validation of core
 This experiment demonstrates how high-dimensional data can be embedded into lower-dimensional spaces while approximately preserving geometric structure, which is a fundamental result in high-dimensional probability and machine learning theory.
 
   
-## Exercise2: Spectral Methods and Recommendation Systems
+## Exercise 2: Spectral Methods and Recommendation Systems
 ### Objective
 This project explores core concepts in linear algebra with a focus on **Singular Value Decomposition (SVD) and Eigenvalue Decomposition (EVD)**, and their application to building a recommendation system.
 
@@ -106,5 +106,50 @@ The project emphasizes:
    + Predict ratings for unseen movies (Top-10 recommendation)
    + Interpreting the First Principal Component (PC1)
    + Extract Top-10 positive and negative movies
-     
-     
+
+
+## Exercise 3: PageRank on WikiVote Network
+### Objective
+This project investigates **graph-theoretic and linear algebraic foundations of ranking algorithms**, with a focus on the **PageRank** method applied to a real-world directed network.
+
+Using the WikiVote dataset, we analyze structural properties of a directed graph and implement multiple versions of the PageRank algorithm. The project emphasizes spectral properties of stochastic matrices, stationary distributions of Markov chains, and efficient large-scale computation using sparse matrix representations.
+
+The main objectives include: 
+  + Exploratory analysis of directed network structure
+  + Understanding degree distributions and power-law behavior
+  + Constructing transition probability matrices
+  + Computing stationary distributions via power iteration
+  + Handling dangling nodes (dead-ends)
+  + Implementing scalable sparse PageRank
+  + Extending to Personalized PageRank
+
+### Implementation Details
+1. Data Preparation & EDA
+   + Load the WikiVote directed graph
+   + Compute Number of nodes and edges & In-degree and out-degree distributions
+   + Detect self-loops
+   + Identify dangling nodes (nodes with out-degree = 0)
+   + Display: Top-20 nodes by in-degree & Top-20 nodes by out-degree
+   + Generate rank–degree plot on log–log scale to examine potential power-law behavior
+2. Dense PageRank on WikiVote Subgraphs
+   + Extract and preprocess two subgraphs (A and B)
+   + Construct Adjacency matrix & Row-stochastic transition matrix
+   + Implement basic PageRank (without dead-end correction)
+   + Report convergence behavior and ranking results
+3. Dense PageRank (with deadend handling)
+   + Modify transition matrix to handle dangling nodes
+   + Compute stationary distribution using the Power Method
+   + Analyze convergence rate and stability
+4. Sparse PageRank (CSR)
+   + Construct sparse adjacency matrix using Compressed Sparse Row (CSR) format
+   + Perform row normalization to obtain sparse transition matrix P
+   + Implement sparse PageRank using power iteration
+   + Apply the algorithm to the full WikiVote graph
+   + Compare runtime and memory efficiency with dense implementation
+5. Personalized PageRank and Dead-End Strategies
+   + Implement PageRank with q-fix (teleportation-based correction)
+   + Implement PageRank with u-fix (uniform redistribution of dangling mass)
+   + Implement Personalized PageRank on the full graph
+   + Analyze the effect of personalization vector on ranking results
+  
+    
