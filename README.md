@@ -11,7 +11,7 @@ All projects were completed under the supervision of **Dr. Ramin Javadi**, and e
 ### Table of Contents
 [Exercise 1: Geometric and Probabilistic Behavior in High Dimensions](https://github.com/pouriaSameti/Mathematics-For-Data-Science?tab=readme-ov-file#exercise-1-geometric-and-probabilistic-behavior-in-high-dimensions)<br>
 [Exercise 2: Spectral Methods and Recommendation Systems](https://github.com/pouriaSameti/Mathematics-For-Data-Science?tab=readme-ov-file#exercise2-spectral-methods-and-recommendation-systems)<br>
-[Exercise 3: Exercise 3: PageRank on WikiVote Network]()<br>
+[Exercise 3: Exercise 3: PageRank on WikiVote Network](https://github.com/pouriaSameti/Mathematics-For-Data-Science/tree/main?tab=readme-ov-file#exercise-3-pagerank-on-wikivote-network)<br>
 <br>
 
 ### Installation
